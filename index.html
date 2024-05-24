@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js" integrity="sha512-DHNepbIus9t4e6YoMBSJLwl+nnm0tIwMBonsQQ+W9NKN6gVVVbomJs9Ii3mQ+HzGZiU5FyJLdnAz9a63ZgZvTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Portafolio</title>
+</head>
+<body>
+      <!-- seccion INICIO-->
+    <span class="sombra">
+        <section id="inicio" class="inicio">
+            <div class="contenido">
+                <header>
+                    <div class="logo">
+                        <i class="fa-brands fa-codepen"></i>
+                        <h1>Gilmar</h1>
+                    </div>
+                    <nav id="nav" class=""">
+                        <a href="#inicio">Inicio</a>
+                        <a href="#servicios">Servicios</a>
+                        <a href="#habilidades">Habilidades</a>
+                        <a href="#trabajos">Trabajos</a>
+                        <a href="#contacto">Contacto</a>
+                    </nav>
+    
+                    <!--Icono del menu responsive-->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+    
+                    <div class="redes">
+                        <a href="https://www.instagram.com/gapgilmar?igsh=bXliM3NhaHJmMTVx" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/gilmar.aquinoporras?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/gilmar-aquino" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </header>
+    
+                <div class="fila">
+                    <div class="col">
+                        <h2>Data Analyst</h2>
+                        <p>Soy un apasionado analista de datos en formación con experiencia en logística y emprendimiento. 
+                            Mi enfoque se centra en el uso de herramientas como Power BI, MySQL y Python para extraer insights valiosos.
+                            Además, estoy fortaleciendo mis habilidades en desarrollo web (HTML, CSS, JavaScript) y tengo un trasfondo en negocios internacionales y marketing, lo que complementa mi capacidad analítica y orientada a resultados.</p>
+                        <button class="btn btn-1" id="descargar-cv">Descargar CV</button>
+                    </div>
+                    <div class="col">
+                        <div class="contenedor-img">
+                            <img src="/maestriacienciadelosdatos.jpg">
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    document.getElementById("descargar-cv").addEventListener("click", function() {
+                        window.location.href = "https://www.jugandoainvertir.com.ar/descargas/Padre-Rico-Padre-Pobre.pdf";
+                    });
+                </script>
+            </div>
+    
+        </section>
+    </span>
+
+    <!--seccion SERVICIOS-->
+    <section id="servicios" class="servicios">
+        <div class="fila">
+            <div class="col">
+                <div class="card">
+                    <div class="icono color1">
+                        <div class="circulo">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                    </div>
+                    <h3>Proceso ETL</h3>
+                    <p class="texto-corto">"Como aspirante a analista de datos, estoy familiarizado con el proceso de ETL 
+                    (Extract, Transform, Load), fundamental en la gestión y análisis de datos. 
+                    </p>
+
+                    <a href="#" id="leer-mas">Leer Más</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color2">
+                        <div class="circulo">
+                            <i class="fa-solid fa-chart-simple"></i>
+                        </div>
+                    </div>
+                    <h3>Dashboard</h3>
+                    <p class="texto-corto">"Desarrollo habilidades en el diseño de dashboards, herramientas visuales para presentar y analizar datos. 
+                    Enfocado en seleccionar métricas clave para una visualización efectiva, 
+                    contribuyendo así a la toma de decisiones informadas y comunicación de resultados.".</p>
+
+                    <a href="#" id="leer-mas">Leer Más</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color3">
+                        <div class="circulo">
+                            <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        </div>
+                    </div>
+                    <h3>Análisis Exploratorio de Datos EDA</h3>
+                    <p class="texto-corto">"El Análisis Exploratorio de Datos (EDA) es mi herramienta secreta para desvelar el potencial oculto en los datos. 
+                    Como emprendedor y creador de marca, aprovecho el EDA para descubrir historias significativas detrás de los números. 
+                    Esta habilidad me permite tomar decisiones estratégicas informadas y dar forma a proyectos con un enfoque único y distintivo."</p>
+
+                    <a href="#" id="leer-mas">Leer Más</a>
+                </div>
+            </div>
+            </div>
+        </div>
+       <!-- <div class="fila">
+            <div class="col">
+                <div class="card">
+                    <div class="icono color1">
+                        <div class="circulo">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+                    </div>
+                    <h3>Diseño Web</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nisi eveniet dolores doloremque sint tempora impedit,
+                    ipsum, voluptate exercitationem suscipit deserunt quisquam 
+                    officiis velit.</p>
+
+                    <a href="#">Leer Más</a>
+                </div>
+            </div>
+        </div>-->
+    </section>
+    <!--seccion habilidades-->
+    <section class="habilidades" id="habilidades">
+        <div class="contenedor-habi">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="75">
+                                75%
+                            </div>
+                            <h2>Power BI</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="50">
+                                50%
+                            </div>
+                            <h2>Python For Data Analyst</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="70">
+                                70%
+                            </div>
+                            <h2>My SQL</h2>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="fila">
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="85">
+                                85%
+                            </div>
+                            <h2>KPI</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="50">
+                                50%
+                            </div>
+                            <h2>Front End</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="70">
+                                70%
+                            </div>
+                            <h2>Negocios</h2>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <!--seccion trabajos-->
+    <section class="trabajos" id="trabajos">
+        <h2>Mis Trabajos</h2>
+        
+        <nav>
+            <a href="javascript:void(0)" class="borde" id="item" onclick="verCategoria('item')">Todos</a>
+            <a href="javascript:void(0)" class="" id="negocios" onclick="verCategoria('negocios')">Negocios</a>
+            <a href="javascript:void(0)" class="" id="investigación" onclick="verCategoria('investigacion')">Investigación</a>
+        </nav>
+
+        <div class="galeria">
+            <div class="item negocios">
+                <img src="/Breinstein_Data_Analist.webp" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>Marketing</span><span>Segmentación y targeting</span>
+                    <a href="#">Ver Trabajos</a>
+                </div>
+            </div>
+            <div class="item negocios">
+                <img src="/a4dbda9524cdf7ebb94329b29668b6d7.jpg" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>Investigación</span><span>Investigación</span>
+                    <a href="#">Ver Trabajos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--seccion contacto-->
+    <section class="contacto" id="contacto">
+        <div class="contenedor-contacto">
+            <h2 class="titulo-grande">CONTACTO</h2>
+            <div class="fila">
+                <div class="col">
+                    <div class="info">
+                        <h3><i class="fa-solid fa-envelope"></i> </i>Email:</h3>
+                        <p><a href="mailto:gilmaraquino1996@gmail.com" target="_blank">gilmaraquino1996@gmail.com</a></p>
+                        <!--<p>gilmaraquino1996@gmail.com</p>-->
+                    </div>
+                    <div class="info">
+                        <h3><i class="fa-brands fa-whatsapp"></i> </i>Teléfono:</h3>
+                        <p><a href="https://wa.me/51998485133">+51 998 485 133</a></p>
+                    </div>
+                    <div class="info">
+                        <h3><i class="fa-solid fa-globe"></i> </i>País:</h3>
+                        <p>Perú</p>
+                    </div>
+                    <div class="info">
+                        <h3><i class="fa-solid fa-city"></i> </i>Ciudad:</h3>
+                        <p>Lima</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <input type="text" id="nombre" placeholder="Nombre...">
+                    <input type="text" id="correo" placeholder="Correo...">
+                    <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <input type="submit" value="Enviar" class="btn" onclick="sendMessage(event)">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Creado por Gilmar Aquino - 2024</p>
+    </footer>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
